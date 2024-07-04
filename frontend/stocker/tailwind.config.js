@@ -13,6 +13,9 @@ export default {
         "st_gray": "#D0D0D0",
         "st_black": "#252525",
       },
+      backgroundImage:{
+        "imgModule": "url(src/assets/background.svg)" 
+      },
     },
   },
   plugins: [],
