@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import BackgroundModule from "../assets/background.svg"
 
 function GamifiedModule() {
     return (

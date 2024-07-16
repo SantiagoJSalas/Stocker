@@ -1,6 +1,6 @@
 import { Apple, Armchair, ClipboardX, Instagram, Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import imgLanding from "../assets/imgLanding.svg"
+import imgLanding from "../../assets/imgLanding.svg"
 import 'animate.css';
 
 function LandingPage() {
@@ -15,8 +15,8 @@ function LandingPage() {
 					</ul>
 					<ul className="flex items-center space-x-16">
 						<li><a href="#beneficios">Beneficios</a></li>
-						<li><a><Link to="/module">Modulo</Link></a></li>
-						<li><button className="bg-[#9FB7A1] text-white py-2 p-6 rounded-lg">Iniciar Sesion</button></li>
+						<li><Link to="/module">Modulo</Link></li>
+						<li><button className="bg-[#9FB7A1] text-white py-2 p-6 rounded-lg"><Link to="/auth">Iniciar Sesion</Link></button></li>
 					</ul>
 				</nav>
 
@@ -24,7 +24,7 @@ function LandingPage() {
 				<main className="flex justify-between items-center p-16"> {/* This is the main section (the catch frase and image) */}
 					<div className="space-y-8">
 						<h1 className="text-4xl max-w-md">El control del <b className="text-st_blue">inventario,</b> todo en un mismo lugar</h1>
-						<button className="bg-st_blue text-white rounded-lg text-xl py-2 px-8">Empezar</button>
+						<button className="bg-st_blue text-white rounded-lg text-xl py-2 px-8"><Link to="/auth">Empezar</Link></button>
 					</div>
 					<div>
 						<img src={imgLanding} draggable="false" />
@@ -63,7 +63,7 @@ function LandingPage() {
 				<section className="px-16" id="modulo"> {/* This is the gamified module section */}
 
 					<div className="space-y-5">
-						<h className="text-2xl font-bold">Quieres aprender mas sobre el tema</h>
+						<h1 className="text-2xl font-bold">Quieres aprender mas sobre el tema</h1>
 						<p className="text-xl">Prueba nuestro modulo gamificado</p>
 						<button className="bg-st_blue text-white rounded-lg text-xl py-2 px-8"><Link to="/module">Empezar</Link></button>
 					</div>
