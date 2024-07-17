@@ -24,7 +24,7 @@ function NavBar() {
                         </Link>
                     </li>
                     <li className="">
-                        <Link to="/wbA/screen1">
+                        <Link to="/wbA/food">
                             <div className="flex space-x-2 items-center">
                                 <Beef />
                                 <h1>Alimentos</h1>
@@ -32,7 +32,7 @@ function NavBar() {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/wbA/">
+                        <Link to="/wbA/resources">
                             <div className="flex space-x-2 items-center">
                                 <Archive />
                                 <h1>Insumos</h1>
@@ -40,7 +40,7 @@ function NavBar() {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/wbA/">
+                        <Link to="/wbA/furniture">
                             <div className="flex space-x-2 items-center">
                                 <Armchair />
                                 <h1>Mobiliaria</h1>

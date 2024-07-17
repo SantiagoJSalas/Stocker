@@ -1,8 +1,11 @@
 import React from 'react';
-import { Routes, Route, Outlet } from 'react-router-dom';
+import {Routes, Route, Outlet } from 'react-router-dom';
 import Dashboard from './Dashboard';
 import Screen1 from './Screen1';
 import NavBar from '../../components/NavBar';
+import Food from './Food';
+import Resources from './Resources';
+import Furniture from './Furniture';
 
 const Layout = () => {
     return (
@@ -21,7 +24,10 @@ function WebApp() {
             <Routes>
                 <Route path="/" element={<Layout />}>
                     <Route index element={<Dashboard />} />
-                    <Route path="screen1" element={<Screen1 />} />
+                    <Route path="food" element={<Food />} />
+                    <Route path="resources" element={<Resources />} />
+                    <Route path="furniture" element={<Furniture />} />
+                    <Route path="tests" element={<Screen1 />} />
                 </Route>
             </Routes>
         </>
