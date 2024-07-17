@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
-import { LayoutDashboard, Beef, Armchair, Archive, LogOut, User } from "lucide-react";
+import { LayoutDashboard, Beef, Armchair, Archive, LogOut, User, Package } from "lucide-react";
 
 function NavBar() {
     return (
         <>
             <nav className="text-cente bg-st_blue rounded-xl h-full w-fit p-5 grid grid-rows-7 justify-items-stretch text-lg text-white divide-y-2 font-medium">
-                <ul className="flex justify-center items-center">
+                <ul className="flex justify-center items-center space-x-2">
+                    <Package size={30} />
                     <h1 className="text-xl">Stocker</h1>
                 </ul>
                 <ul className="flex justify-center items-center">

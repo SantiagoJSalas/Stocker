@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function GamifiedModule() {
     return (
         <>
-            <div className="bg-imgModule bg-cover h-screen space-y-10 p-5">
+            <div className="bg-imgModule bg-cover h-screen space-y-10 p-5 font-montserrat">
                 <nav class="flex items-center justify-between p-5 text-xl bg-white rounded-lg">
                     <ul class="flex items-center space-x-5">
                         <div class="h-5 w-5 bg-black"></div>

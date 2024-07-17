@@ -1,4 +1,4 @@
-import { Apple, Armchair, ClipboardX, Instagram, Linkedin } from 'lucide-react';
+import { Apple, Armchair, ClipboardX, Instagram, Linkedin, Package } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import imgLanding from "../../assets/imgLanding.svg"
 import 'animate.css';
@@ -6,11 +6,13 @@ import 'animate.css';
 function LandingPage() {
 	return (
 		<>
-			<div className="space-y-16 text-st_black">
+			<div className="space-y-16 text-st_black font-montserrat">
 
 				<nav className="flex items-center justify-between p-5 text-xl"> {/* This is the nav bar */}
-					<ul className="flex items-center space-x-5">
-						<div className="h-5 w-5 bg-black"></div>
+					<ul className="flex items-center space-x-2">
+						<div>
+							<Package size={30} />
+						</div>
 						<li>Stocker</li>
 					</ul>
 					<ul className="flex items-center space-x-16">

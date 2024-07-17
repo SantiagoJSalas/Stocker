@@ -16,6 +16,9 @@ export default {
       backgroundImage:{
         "imgModule": "url(src/assets/background.svg)" 
       },
+      fontFamily: {
+        'montserrat': ['Montserrat', 'sans-serif'],
+      },
     },
   },
   plugins: [

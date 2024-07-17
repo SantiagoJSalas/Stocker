@@ -43,7 +43,7 @@ function Dashboard() {
     const [date, setDate] = useState(new Date());
     return (
         <>
-            <div className="w-full h-full grid grid-cols-5 grid-rows-6 text-xl gap-5 animate__animated animate__fadeIn animate__faster">
+            <div className="w-full h-full grid grid-cols-5 grid-rows-6 text-xl gap-5 animate__animated animate__fadeIn animate__faster font-montserrat">
                 <section className="col-span-4 bg-white rounded-lg h-fit p-5 w-full text-2xl">
                     <h1>Bienvenido de vuelta, <b>John Doe</b>!</h1>
                     <p>Echa un vistazo a tu semana</p>

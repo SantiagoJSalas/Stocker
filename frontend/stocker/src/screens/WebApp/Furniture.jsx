@@ -49,7 +49,7 @@ function Furniture() {
     };
     return (
         <>
-            <div className="size-full flex justify-center items-center">
+            <div className="size-full flex justify-center items-center font-montserrat">
                 <div className="bg-white h-[90vh] w-[80vw] rounded-xl p-5 space-y-5 animate__animated animate__fadeIn animate__fast">
                     <div className='flex justify-between items-center text-2xl'>
                         <h1 className='font-bold'>Seccion de mobiliaria</h1>

@@ -5,7 +5,7 @@ import { Lock, Mail, User } from "lucide-react";
 function Auth() {
     return (
         <>
-            <div className="h-screen bg-imgModule bg-cover flex justify-center items-center">
+            <div className="h-screen bg-imgModule bg-cover flex justify-center items-center font-montserrat">
                 <section className="size-8/12 bg-white rounded-lg grid grid-cols-2 divide-x-2 divide-gray divide-opacity-20 animate__animated animate__fadeIn animate__faster">
                     <div className="flex flex-col justify-between items-center p-10">
                         <h1 className="text-4xl">CREAR CUENTA</h1>
