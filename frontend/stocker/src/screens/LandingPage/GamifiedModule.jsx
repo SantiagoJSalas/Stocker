@@ -1,3 +1,4 @@
+import { Package } from "lucide-react";
 import React from "react";
 import { Link } from 'react-router-dom';
 
@@ -6,10 +7,12 @@ function GamifiedModule() {
         <>
             <div className="bg-imgModule bg-cover h-screen space-y-10 p-5 font-montserrat">
                 <nav class="flex items-center justify-between p-5 text-xl bg-white rounded-lg">
-                    <ul class="flex items-center space-x-5">
-                        <div class="h-5 w-5 bg-black"></div>
-                        <li><a><Link to="/">Stocker</Link></a></li>
-                    </ul>
+                <ul className="flex items-center space-x-2">
+						<div>
+							<Package size={30} />
+						</div>
+						<Link to="/">Stocker</Link>
+					</ul>
                     <ul class="flex items-center space-x-16">
                         <li><Link to="/"><a>Principal</a></Link></li>
                         <li><a href="#modulo">Modulo</a></li>

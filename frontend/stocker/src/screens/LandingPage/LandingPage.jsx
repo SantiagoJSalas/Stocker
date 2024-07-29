@@ -13,7 +13,7 @@ function LandingPage() {
 						<div>
 							<Package size={30} />
 						</div>
-						<li>Stocker</li>
+						<Link to="/">Stocker</Link>
 					</ul>
 					<ul className="flex items-center space-x-16">
 						<li><a href="#beneficios">Beneficios</a></li>
