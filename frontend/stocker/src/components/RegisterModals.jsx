@@ -223,9 +223,14 @@ export const ResourcesModal = ({ showModal, setShowModal, modalId }) => {
                 min={1}
               />
               <select name="field4" value={inputs.field4} onChange={handleInputChange} className='border p-2 rounded'>
-                <option value="" disabled selected>Seleccione una categoria</option>
-                <option value="option1">Baño</option>
-                <option value="option2">Misc</option>
+                <option value="" disabled>Seleccione una categoria</option>
+                <option value="option1">Material Didáctico</option>
+                <option value="option2">Material de Limpieza</option>
+                <option value="option3">Suministros de Oficina</option>
+                <option value="option4">Ropa y Textiles</option>
+                <option value="option5">Equipos de Cocina</option>
+                <option value="option6">Tecnología y Electrónica</option>
+                <option value="option7">Otro</option>
               </select>
             </div>
             <button type="submit" className="bg-st_green text-white p-2 rounded w-full mt-4 text-xl">

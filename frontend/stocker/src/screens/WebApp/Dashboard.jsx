@@ -49,17 +49,7 @@ function Dashboard() {
                     <p>Echa un vistazo a tu semana</p>
                 </section>
 
-                <section className="bg-white rounded-lg row-span-2">
-                    <Calendar
-                        onChange={setDate}
-                        value={date}
-                    />
-                    <div>
-                        Selected date: {date.toDateString()}
-                    </div>
-                </section>
-
-                <section className="bg-white rounded-lg row-span-5 col-start-5 p-5">
+                <section className="bg-white rounded-lg row-span-7 col-start-5 p-5">
                     <div className="w-full  text-center space-y-4 ">
                         <h1 className="font-bold">PROXIMOS A VENCER</h1>
                         <p className="font-light text-lg">Estos productos vencen en los proximos 7 dias</p>
