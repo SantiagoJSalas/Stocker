@@ -107,7 +107,6 @@ function Resources() {
                         <table className="min-w-full text-center text-xl divide-y">
                             <thead>
                                 <tr>
-                                    <th className="py-2 px-4 ">Id</th>
                                     <th className="py-2 px-4 ">Recurso</th>
                                     <th className="py-2 px-4 ">Marca</th>
                                     <th className="py-2 px-4 ">Cantidad</th>
@@ -118,13 +117,11 @@ function Resources() {
                             <tbody className='divide-y'>
                                 {resources.map(item => (
                                     <tr key={item.id}>
-                                        <td className="py-2 px-4 ">{item.id}</td>
                                         <td className="py-2 px-4 ">{item.name}</td>
                                         <td className="py-2 px-4 ">{item.brand}</td>
                                         <td className="py-2 px-4 ">{item.stock}</td>
                                         <td className="py-2 px-4 ">{item.category}</td>
                                         <td className="py-2 px-4  space-x-5">
-                                            <button><Edit3 size={30} /></button>
                                             <button onClick={() => handleDeleteResource(item.id)}><Trash2 color='#f00' size={30} /></button>
                                         </td>
                                     </tr>

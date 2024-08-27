@@ -84,7 +84,6 @@ function Furniture() {
                         <table className="min-w-full text-center text-xl divide-y">
                             <thead>
                                 <tr>
-                                    <th className="py-2 px-4 ">Id</th>
                                     <th className="py-2 px-4 ">Nombre</th>
                                     <th className="py-2 px-4 ">Estado</th>
                                     <th className="py-2 px-4 "></th>
@@ -93,7 +92,6 @@ function Furniture() {
                             <tbody className='divide-y'>
                                 {furnitureItems.map(item => (
                                     <tr key={item.id}>
-                                        <td className="py-2 px-4 ">{item.id}</td>
                                         <td className="py-2 px-4 ">{item.name}</td>
                                         <td className="py-2 px-4 ">{item.state}</td>
                                         <td className="py-2 px-4 space-x-5">

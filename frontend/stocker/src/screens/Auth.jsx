@@ -4,7 +4,7 @@ import { Lock, Mail, User } from "lucide-react";
 
 function Auth() {
     const navigate = useNavigate(); // Hook for navigation
-    const [signUpData, setSignUpData] = useState({ name: "", email: "", companyName: "", password: "", confirmPassword: "" });
+    const [signUpData, setSignUpData] = useState({email: "", companyName: "", password: "", confirmPassword: "" });
     const [loginData, setLoginData] = useState({ email: "", password: "" });
 
     const handleSignUpChange = (e) => {
@@ -77,11 +77,6 @@ function Auth() {
             <section className="size-8/12 bg-white rounded-lg grid grid-cols-2 divide-x-2 divide-gray divide-opacity-20 animate__animated animate__fadeIn animate__faster">
                 <div className="flex flex-col justify-between items-center p-10">
                     <h1 className="text-4xl">CREAR CUENTA</h1>
-                    <div className="flex items-center w-full space-x-2 border-2 border-st_gray rounded-lg px-3">
-                        <User />
-                        <span className="h-[90%] w-[2px] rounded-full bg-st_gray"></span>
-                        <input name="name" type="text" className="w-full h-14" placeholder="Nombre del administrador" onChange={handleSignUpChange} />
-                    </div>
                     <div className="flex items-center w-full space-x-2 border-2 border-st_gray rounded-lg px-3">
                         <User />
                         <span className="h-[90%] w-[2px] rounded-full bg-st_gray"></span>

@@ -43,25 +43,10 @@ function Dashboard() {
     const [date, setDate] = useState(new Date());
     return (
         <>
-            <div className="w-full h-full grid grid-cols-5 grid-rows-6 text-xl gap-5 animate__animated animate__fadeIn animate__faster font-montserrat">
+            <div className="w-full h-full grid grid-cols-4 grid-rows-6 text-xl gap-5 animate__animated animate__fadeIn animate__faster font-montserrat">
                 <section className="col-span-4 bg-white rounded-lg h-fit p-5 w-full text-2xl">
-                    <h1>Bienvenido de vuelta, <b>John Doe</b>!</h1>
-                    <p>Echa un vistazo a tu semana</p>
-                </section>
-
-                <section className="bg-white rounded-lg row-span-7 col-start-5 p-5">
-                    <div className="w-full  text-center space-y-4 ">
-                        <h1 className="font-bold">PROXIMOS A VENCER</h1>
-                        <p className="font-light text-lg">Estos productos vencen en los proximos 7 dias</p>
-                        <div className="w-full grid grid-cols-2 items-stretch">
-                            <div className="place-self-start">
-                                <h1>Hello</h1>
-                            </div>
-                            <div className="place-self-end">
-                                <button onClick={DeleteWarning}><Trash color="#f00" /></button>
-                            </div>
-                        </div>
-                    </div>
+                    <h1>¡Bienvenido/a de vuelta!</h1>
+                    <p>Recuerda siempre echar un vistazo a tu inventario</p>
                 </section>
 
                 <section className="col-span-4 row-start-7 grid grid-cols-3 gap-x-5">
