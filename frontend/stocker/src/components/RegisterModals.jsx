@@ -4,6 +4,10 @@ import Swal from 'sweetalert2';
 import { createFood } from '../api/food';
 import { createSupply } from '../api/supply';
 import { createFurniture } from '../api/furniture';
+import { getUser } from '../utils/getUser';
+
+const user = getUser()
+const id = user.id
 
 export const FoodModal = ({ showModal, setShowModal, companyId, refetchFoods }) => {
   const [inputs, setInputs] = useState({
@@ -62,7 +66,7 @@ export const FoodModal = ({ showModal, setShowModal, companyId, refetchFoods }) 
           brand: inputs.brand,
           stock: parseInt(inputs.stock, 10),
           spoilingDate: new Date(inputs.spoilingDate),
-          companyId: companyId,
+          companyId: companyId || id,
       };
 
       try {
@@ -209,7 +213,7 @@ export const ResourcesModal = ({ showModal, setShowModal, refetchResources, comp
           brand: inputs.brand,
           stock: parseInt(inputs.stock, 10),
           category: inputs.category,
-          companyId: companyId,
+          companyId: companyId || id,
       };
 
       try {
@@ -360,7 +364,7 @@ export const FurnitureModal = ({ showModal, setShowModal, refetchFurniture, comp
         const furnitureData = {
             name: inputs.name,
             state: inputs.state,
-            companyId: companyId,
+            companyId: companyId || id,
         };
 
         try {
