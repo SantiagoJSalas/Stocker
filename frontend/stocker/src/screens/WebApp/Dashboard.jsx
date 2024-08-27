@@ -66,6 +66,7 @@ function Dashboard() {
                         <button onClick={() => openModal('furnituremodal')} className="w-[80%] rounded-lg p-1 bg-st_blue font-bold text-white">Ir</button>
                     </div>
                 </section>
+
                 <FoodModal showModal={modals.foodmodal} setShowModal={() => closeModal('foodmodal')} modalId="foodmodal" />
                 <ResourcesModal showModal={modals.resourcemodal} setShowModal={() => closeModal('resourcemodal')} modalId="resourcemodal" />
                 <FurnitureModal showModal={modals.furnituremodal} setShowModal={() => closeModal('furnituremodal')} modalId="furnituremodal" />

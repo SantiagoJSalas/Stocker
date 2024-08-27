@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { LayoutDashboard, Beef, Armchair, Archive, LogOut, User, Package } from "lucide-react";
+import { LayoutDashboard, Beef, Armchair, Archive, LogOut, User, Package, HelpCircle } from "lucide-react";
 
 function NavBar() {
     return (
@@ -10,10 +10,12 @@ function NavBar() {
                     <h1 className="text-xl">Stocker</h1>
                 </ul>
                 <ul className="flex justify-center items-center">
-                    <div className="flex space-x-2">
-                        <User />
-                        <h1>John Doe</h1>
-                    </div>
+                    <li>
+                        <a href="../assets/MANUAL DE USO.docx" download className="flex space-x-2">
+                            <HelpCircle />
+                            <h1>Ayuda</h1>
+                        </a>
+                    </li>
                 </ul>
                 <ul className="row-span-4 flex flex-col justify-center items-center space-y-[50%]">
                     <li>
