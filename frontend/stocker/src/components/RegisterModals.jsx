@@ -428,8 +428,9 @@ export const FurnitureModal = ({ showModal, setShowModal, refetchFurniture, comp
                         >
                             <option value="" disabled>Seleccione un estado</option>
                             <option value="Nuevo">Nuevo</option>
+                            <option value="Bueno">Bueno</option>
                             <option value="Usado">Usado</option>
-                            <option value="Usado">Reparado</option>
+                            <option value="Reparado">Reparado</option>
                             <option value="Dañado">Dañado</option>
                         </select>
                     </div>
