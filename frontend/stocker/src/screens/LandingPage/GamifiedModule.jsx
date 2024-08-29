@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Package } from 'lucide-react';
 
 function GamifiedModule() {
     const [isOpen, setIsOpen] = useState(false);
@@ -16,10 +16,10 @@ function GamifiedModule() {
                 {/* Navbar */}
                 <nav className="flex items-center justify-between p-5 text-xl bg-white rounded-lg relative">
                     <ul className="flex items-center space-x-5">
-                        <div className="h-5 w-5 bg-black"></div>
+                        <Package/>
                         <li><Link to="/" className="text-lg md:text-xl">Stocker</Link></li>
                     </ul>
-                    
+
                     <div className="md:hidden relative">
                         <button onClick={toggleMenu} className="text-black">
                             <Menu size={30} />
@@ -60,8 +60,11 @@ function GamifiedModule() {
                 <section className="flex justify-center">
                     <div className="bg-white rounded-lg p-10 text-lg md:text-xl space-y-8 max-w-[85%]">
                         <div className="flex justify-center">
-                            <video className="rounded-lg" preload="metadata" autoPlay width="75%" loop controls >
-                                {/* <source src="Isaac bailando (isaac dance video original).mp4" > */}
+                            {/* <video className="rounded-lg" preload="metadata" autoPlay width="75%" controls >
+                                <source src="../../assets/Stocker_Gameplay.mp4"/>
+                            </video> */}
+                            <video className="rounded-lg" preload="metadata" width="75%" controls >
+                                <source src="../../assets/Stocker_Gameplay.mp4" type="video/mp4"/>
                             </video>
                         </div>
                         <div className="animate__animated animate__fadeIn">

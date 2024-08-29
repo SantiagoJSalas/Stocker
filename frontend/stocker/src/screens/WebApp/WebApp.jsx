@@ -6,7 +6,6 @@ import NavBar from '../../components/NavBar';
 import Food from './Food';
 import Resources from './Resources';
 import Furniture from './Furniture';
-import PDFholder from './PDFHolder';
 
 const Layout = () => {
     return (
@@ -28,7 +27,6 @@ function WebApp() {
                     <Route path="food" element={<Food />} />
                     <Route path="resources" element={<Resources />} />
                     <Route path="furniture" element={<Furniture />} />
-                    <Route path="pdfholder" element={<PDFholder />} />
                 </Route>
             </Routes>
         </>
