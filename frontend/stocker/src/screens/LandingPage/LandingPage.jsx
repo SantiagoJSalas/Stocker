@@ -50,7 +50,7 @@ function LandingPage() {
                     {/* Regular Navbar Links for Larger Screens */}
                     <ul className="hidden md:flex items-center space-x-16">
                         <li><a href="#beneficios" className="text-lg md:text-xl">Beneficios</a></li>
-                        <li><Link to="/module" className="text-lg md:text-xl">Modulo</Link></li>
+                        <li><Link target='_blank' to="https://drive.google.com/drive/folders/1NjAsA6CH3TaVKf59HrpQOe1k2vywIDpU?usp=drive_link">Modulo</Link></li>
                         <li>
                             <button className="bg-[#9FB7A1] text-white py-2 px-6 rounded-lg text-lg md:text-xl">
                                 <Link to="/auth">Iniciar Sesion</Link>
@@ -99,7 +99,7 @@ function LandingPage() {
                     <div className="space-y-5">
                         <h1 className="text-xl md:text-2xl font-bold">Quieres aprender mas sobre el tema</h1>
                         <p className="text-lg md:text-xl">Prueba nuestro modulo gamificado</p>
-                        <button className="bg-st_blue text-white rounded-lg text-lg md:text-xl py-2 px-8"><Link to="/module">Empezar</Link></button>
+                        <button className="bg-st_blue text-white rounded-lg text-lg md:text-xl py-2 px-8"><Link target='_blank' to="https://drive.google.com/drive/folders/1NjAsA6CH3TaVKf59HrpQOe1k2vywIDpU?usp=drive_link">Empezar</Link></button>
                     </div>
                 </section>
 
